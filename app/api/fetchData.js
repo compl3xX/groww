@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default async function fetchData() {
     try {
-        const response = await axios.get('https://groww-intern-assignment.vercel.app/v1/api/order-details');
+        const response = await axios.get(process.env.API_URI);
         return response.data;
     } catch (error) {
         console.error(error);

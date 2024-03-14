@@ -8,6 +8,8 @@ const page = async () => {
 
     const data = await fetchData()
 
+
+
     return (
         <div className="flex  justify-between items-center m-5 flex-col">
             <div className="border-2 border-black-600  p-5 h-[32rem] ">
@@ -15,7 +17,7 @@ const page = async () => {
                 <div className="h-[100%] flex flex-col justify-evenly">
                     <div>
                         <h2 className="text-gray-600 font-bold ">Choose Payment Method</h2>
-                        {data.paymentMethods.map(method => <PaymentMethods method={method} />)}
+                        {data.paymentMethods.map(method => <PaymentMethods key={method} method={method} />)}
                     </div>
                     <div >
                         <TotalAmt />

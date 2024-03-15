@@ -15,7 +15,7 @@ const OrderItem = ({ order }) => {
                     <div className="sm:w-[10rem] lg:w-[20rem]">{order.title}</div>
                     <div className="font-bold">Rs.{order.price * order.quantity}</div>
                 </div>
-                <div>{order.quantity}</div>
+                <div className="font-bold p-1">{order.quantity}</div>
             </div>
         </div>
     )

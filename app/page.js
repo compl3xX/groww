@@ -15,7 +15,7 @@ export default async function Home() {
         <div className="flex flex-col justify-between">
           <h2 className="font-bold text-gray-600 mt-5 text-lg ">Delivery Detail</h2>
           <div className="flex flex-row items-center gap-1 text-sm  bg-gray-200 w-[10rem] p-2 rounded-sm mt-5" ><IoLocationOutline />Kanpur,UttarPradesh</div>
-          <div className="flex flex-row items-center gap-3 text-sm mt-5 border-2 border-gray-300 w-[20rem] p-2 rounded-sm"><MdOutlineLocalPhone />8279637415</div>
+          <div className="flex flex-row items-center gap-3 text-sm mt-5 border-2 border-gray-300 w-[100%] p-2 rounded-sm"><MdOutlineLocalPhone />8279637415</div>
           <OrderList />
           <OrderSummary />
           <TotalAmt />
